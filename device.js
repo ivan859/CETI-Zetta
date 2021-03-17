@@ -25,10 +25,12 @@ class LED extends Device {
             .name('text-led')
     }
     turnOff = (callback) => {
+        console.log("Device Off");
         this.state = "off";
         callback();
     }
     turnOn = (callback) => {
+        console.log("Device On");
         this.state = "on",
         callback();
     }
